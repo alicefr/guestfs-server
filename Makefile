@@ -1,5 +1,5 @@
 .PHONY: generate
-generate: ## Compile the proto file.
+generate:
 	protoc --go_out=. --go_opt=paths=source_relative  --go-grpc_out=. --go-grpc_opt=paths=source_relative libguestfs/libguestfs.proto 
 
 .PHONY: build
